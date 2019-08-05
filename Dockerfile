@@ -1,6 +1,6 @@
 FROM oraclelinux
 
-MAINTAINER Oriol Ramos Terrades <oriol.ramos@uab.cat>
+LABEL maintainer="Oriol Ramos Terrades <oriol.ramos@uab.cat>"
 
 
 ADD setup.sh /setup.sh

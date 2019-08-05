@@ -5,16 +5,16 @@ echo "installing required packages"
 
 yum -y update; yum clean all
 yum install -y yum install \
-	oracle-rdbms-server-11gR2-preinstall \
-	glibc-static \
-	wget \
-	unzip \
-	openssh-server \
-	passwd \
-	vim \
-    vixie-cron &&\
+    oracle-rdbms-server-11gR2-preinstall \
+    glibc-static \
+    wget \
+    unzip \
+    openssh-server \
+    passwd \
+    vim \
+    cronie &&\
     yum clean all &&\
-	rm -rf /var/cache/yum
+    rm -rf /var/cache/yum
 
 mkdir /u01 && chown oracle:dba /u01
 recovery_files="/u02/recovery_files"
