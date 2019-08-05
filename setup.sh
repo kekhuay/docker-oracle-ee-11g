@@ -12,7 +12,7 @@ yum install -y yum install \
     openssh-server \
     passwd \
     vim \
-    cronie &&\
+    vixie-cron &&\
     yum clean all &&\
     rm -rf /var/cache/yum
 
